@@ -1,0 +1,404 @@
+/* Sakura.css v1.3.1
+ * ================
+ * Minimal css theme.
+ * Project: https://github.com/oxalorg/sakura/
+ */
+/* Body */
+html {
+  font-size: 62.5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+}
+
+body {
+  font-size: 1.8rem;
+  line-height: 1.618;
+  max-width: 60em;
+  margin: auto;
+  color: #4a4a4a;
+  background-color: #f9f9f9;
+  padding: 13px;
+}
+
+@media (max-width: 684px) {
+  body {
+    font-size: 1.53rem;
+  }
+}
+
+@media (max-width: 382px) {
+  body {
+    font-size: 1.35rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2.35em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+small,
+sub,
+sup {
+  font-size: 75%;
+}
+
+hr {
+  border-color: #1d7484;
+}
+
+a {
+  text-decoration: none;
+  color: #1d7484;
+}
+a:hover {
+  color: #982c61;
+  border-bottom: 2px solid #4a4a4a;
+}
+a:visited {
+  color: #144f5a;
+}
+
+ul {
+  padding-left: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 2.5rem;
+}
+
+li {
+  margin-bottom: 0.4em;
+}
+
+blockquote {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-right: 0.8em;
+  border-left: 5px solid #1d7484;
+  margin-bottom: 2.5rem;
+  background-color: #f1f1f1;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+}
+
+/* Pre and Code */
+pre {
+  background-color: #f1f1f1;
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+  margin-top: 0px;
+  margin-bottom: 2.5rem;
+  font-size: 0.9em;
+}
+
+code {
+  font-size: 0.9em;
+  padding: 0 0.5em;
+  background-color: #f1f1f1;
+  white-space: pre-wrap;
+}
+
+pre > code {
+  padding: 0;
+  background-color: transparent;
+  white-space: pre;
+  font-size: 1em;
+}
+
+footer {
+  text-align: center;
+  background-color: #1d75848c;
+}
+
+/* Tables */
+table {
+  text-align: justify;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.75rem 0;
+}
+
+td,
+th {
+  padding: 0.5em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+
+h4{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+/* Buttons, forms and input */
+input,
+textarea {
+  border: 1px solid #4a4a4a;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid #1d7484;
+}
+
+textarea {
+  width: 100%;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #813074d7;
+  color: #f9f9f9;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+  cursor: default;
+  opacity: 0.5;
+}
+.button:focus:enabled,
+.button:hover:enabled,
+button:focus:enabled,
+button:hover:enabled,
+input[type="submit"]:focus:enabled,
+input[type="submit"]:hover:enabled,
+input[type="reset"]:focus:enabled,
+input[type="reset"]:hover:enabled,
+input[type="button"]:focus:enabled,
+input[type="button"]:hover:enabled {
+  background-color: #982c61;
+  border-color: #982c61;
+  color: #f9f9f9;
+  outline: 0;
+}
+
+textarea,
+select,
+input {
+  color: #4a4a4a;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  margin-bottom: 10px;
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+textarea:focus,
+select:focus,
+input:focus {
+  border: 1px solid #1d7484;
+  outline: 0;
+}
+
+input[type="checkbox"]:focus {
+  outline: 1px dotted #1d7484;
+}
+
+label,
+legend,
+fieldset {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+
+.links{
+  display: block;
+  font-weight: 100;
+  text-align: right;
+  font-size: 1.5em;
+  margin-bottom: 0.2rem;
+  background-color: #bdbdbd80;
+}
+
+.nav{
+  display: block;
+  font-weight: 100;
+  text-align: right;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+}
+
+.infor{
+  display: block;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.2rem;
+  margin-top: 0.5rem;
+  font-style: bold;
+}
+
+
+.img{
+  display: block;
+  height: auto;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.img_cap{
+  margin-top: 0;
+  font-size: small;
+}
+.video_cap{
+  margin-top: 0;
+  font-size: small;
+}
+
+.div1{
+  background-color: #fffdf6;
+}
+
+.div2{
+  background-color: #ece8d9;
+}
+
+.title{
+font-family: "admiration";
+src : url(../src/font/Admiration\ Pains.ttf) format("opentype");
+font-weight: 900;
+font-size:xxx-large;
+background-color: rgba(204, 197, 160, 0.479);
+}
+
+.desc{
+  font-family: "admiration";
+  font-size: medium;
+  font-weight: 300;
+  background-color: rgba(204, 197, 160, 0.479);
+  text-align: right;
+}
+
+.photo{
+  background-color: rgba(204, 197, 160, 0.479);
+	width: 100%;
+  background-image: url(../src/r2.png);
+
+ }
+
+ .cards {
+  display: block;
+  flex-direction: column;
+  float : left;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  max-width: 300px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.thumbs{
+  background-color: rgba(204, 197, 160, 0.479);
+  background-image: url(../src/r2.png);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.namedata{
+  margin-top: 1.3rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgba(107, 114, 128, 1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.reviewdata{
+  margin-top: 0.4rem;
+  line-height: 1.625;
+  text-align: left;
+  color: rgba(107, 114, 128, 1);
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+.ratedata{
+  display: flex;
+  grid-gap: 0.125rem;
+  gap: 0.125rem;
+  color: rgb(122, 19, 91);
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.datedata{
+  color: rgb(0, 0, 0);
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+

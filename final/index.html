@@ -1,0 +1,87 @@
+<!-- Create your About page here. Make sure you include citations -->
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+   <!-- <link rel="stylesheet" href="https://unpkg.com/mvp.css"> -->
+   <link rel="stylesheet" href="./css/sakura.css">
+
+    <title>INDEX >> WEB222 Final _ Saemi Park</title> 
+
+    <div class="links">>> Links</div>
+<nav>
+    <ul class="nav">
+        <a href = ".\infor.html">INFORMATION</a>
+        ||
+        <a href = ".\about.html">ABOUT</a>
+        ||
+        <a href = ".\reviews.html">REVIEWS</a>
+    </ul>
+</nav>
+<section>
+    <div class ="title">LET'S PLAY</div>
+    <div class ="desc">THIS WEB PAGE IS FOR ASSIGNMENT OF WEB222<br>THE GAME IS "<b>Rummikub</b>"</div>
+    <div class ="photo">
+        <img src="./src/r2.png" art="rummikub" width = "100" height = "100" >
+    </div>
+    <br><br>
+</section>
+   <br><hr>
+</head>
+
+<body>
+    <div class = "div1", id = "div1">
+        <h1> DO YOU LIKE TO PLAY GAME? </h1>
+        <p class="infor">
+            &nbsp&nbsp Have you ever play any game? I usually do not play game, but sometimes I played "<b><i>RUMMIKUB</i></b>". Rummikub is kind of board game and easy game. <br>
+        </p>
+        <figure class ="img">
+            <figcaption class = "img_cap"> Image </figcaption>
+            <img src = "./src/r1.jpg" alt = "An image should show here" width = "300" height = "300">
+        </figure>
+        <br><hr>
+        </div>
+
+        <div class = "div2", id = "div2">
+            <h1> WHO PLAY? </h1>
+            <figure lass ="video">
+                <figcaption class = "video_cap">Video 1 - no sound</figcaption>
+                    <video width="400" height="320" controls>
+                        <source src="./src/Media1.mp4" type="video/mp4">
+                    </video>
+                </figure>
+            <p class="infor">
+                &nbsp&nbsp Maybe you think this game is boring. I do not deny it. Because there are many other more interesting things in the world! But once you fall in love with the game, this too will be a new pleasure. look at youtube A lot of people play games!
+             </p>
+            <br><hr>
+            </div>
+
+ 
+        <div class="card">
+            <span class="card__title"> GET NEWLETTERS FROM US! </span>
+            
+            <form id = "signup" method="post"   action="https://httpbin.org/post" onsubmit="return FormCheck()">
+                <div> 
+                    <input placeholder="Your Email" type="text" name="Email" id = "email" required> </div>
+                    <input type="hidden" id="name" name="SAE-MI PARK" value="SAE-MI PARK">
+                    <div id= "Buttons">        
+                        <input type="submit" value="submit"  onclick="return FormCheck()"/>
+                    </div>
+                </form>
+                
+                <span id ="errors"></span>
+            </div>
+        </div> 
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/reviewData.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+</body>
+
+<footer>
+<p>SAMMY</p>
+</footer>
